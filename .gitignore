@@ -1,0 +1,8 @@
+# Generated PDFs are regenerable; keep the folder, not the files.
+output/*
+!output/README.md
+!output/.gitkeep
+!output/.gitignore
+
+__pycache__/
+*.pyc

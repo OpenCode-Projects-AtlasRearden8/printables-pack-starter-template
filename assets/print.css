@@ -1,0 +1,92 @@
+/*
+ * print.css — shared print stylesheet for every sheet in this pack.
+ *
+ * Design rules for all free-*-pack sheets:
+ *   - US Letter page, generous margins, room to write by hand.
+ *   - Two-ink friendly: works fine printed in black & white.
+ *   - Brand-free output: no logos, no company names, no URLs.
+ *   - Plain, warm, readable. No tiny text. Nothing condescending.
+ */
+
+/* ---------- Page setup -------------------------------------------- */
+
+@page {
+  size: Letter;             /* 8.5in x 11in */
+  margin: 0.5in;
+}
+
+/* ---------- Shared header: the recheck-date block ----------------- */
+/* Every sheet starts with this block so readers can see at a glance
+   when the sheet was last rebuilt and when it should be re-checked. */
+
+.recheck-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 3px solid #4a5568;
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.6rem;
+  font-size: 8.5pt;
+  color: #2d3748;
+}
+
+.recheck-block .recheck-item {
+  white-space: nowrap;
+}
+
+.recheck-block .recheck-label {
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.recheck-block .recheck-value {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Titles ------------------------------------------------- */
+
+.sheet-title {
+  font-size: 20pt;
+  font-weight: bold;
+  color: #1a202c;
+  margin: 0 0 0.15rem 0;
+  line-height: 1.15;
+}
+
+.sheet-subtitle {
+  font-size: 10pt;
+  color: #4a5568;
+  margin: 0 0 0.7rem 0;
+}
+
+.sheet-tagline {
+  font-size: 9pt;
+  color: #4a5568;
+  margin: 0 0 0.75rem 0;
+  font-style: italic;
+}
+
+/* ---------- Print-only footer hint -------------------------------- */
+
+.print-hint {
+  font-size: 7.5pt;
+  color: #718096;
+  text-align: center;
+  margin-top: 0.6rem;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 0.3rem;
+}
+
+/* Hide anything meant only for screens (e.g. in-browser guides) */
+.screen-only {
+  display: none;
+}
+
+/* ---------- Common worksheet pieces -------------------------------- */
+
+.write-line {
+  border-bottom: 1px solid #a0aec0;
+  height: 10pt;
+}

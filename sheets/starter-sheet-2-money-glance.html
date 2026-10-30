@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Money at a Glance — Free Printable Pack Starter Template</title>
+<link rel="stylesheet" href="../assets/print.css">
+<style>
+  /* Sheet-specific layout */
+  .summary-row { display: flex; gap: 0.35rem; margin-bottom: 0.55rem; }
+  .summary-card {
+    flex: 1;
+    border: 1.5px solid #cbd5e0;
+    border-radius: 4px;
+    padding: 0.35rem 0.45rem;
+  }
+  .summary-card h3 { font-size: 9.5pt; margin: 0 0 0.2rem 0; color: #1a202c; }
+  .summary-card .amount { border-bottom: 1px solid #a0aec0; height: 24pt; }
+  .summary-card .card-help { font-size: 8pt; color: #4a5568; margin: 0.2rem 0 0 0; }
+
+  .money-table { width: 100%; border-collapse: collapse; }
+  .money-table th, .money-table td {
+    border: 1px solid #cbd5e0;
+    padding: 0.3rem 0.35rem;
+    font-size: 9pt;
+    text-align: left;
+  }
+  .money-table th { background: #edf2f7; color: #1a202c; font-size: 8.5pt; }
+  .money-table td.bill { width: 2.9in; }
+  .money-table td.due { width: 0.75in; }
+  .money-table td.amt { width: 0.85in; }
+  .money-table td.paid { width: 0.55in; }
+
+  .notes-heading { font-size: 10.5pt; margin: 0.55rem 0 0.2rem 0; color: #1a202c; }
+  .notes-slate .write-line { margin-top: 3.2pt; }
+</style>
+</head>
+<body>
+
+  <!-- ===== Recheck-date header block (required on every sheet) ===== -->
+  <header class="recheck-block">
+    <div class="recheck-item">
+      <span class="recheck-label">Last rebuilt:</span>
+      <span class="recheck-value">{{BUILD_DATE}}</span>
+    </div>
+    <div class="recheck-item">
+      <span class="recheck-label">Recheck after:</span>
+      <span class="recheck-value">{{RECHECK_DATE}}</span>
+    </div>
+    <div class="recheck-item">
+      <span class="recheck-label">Version:</span>
+      <span class="recheck-value">{{VERSION}}</span>
+    </div>
+  </header>
+  <!-- ================================================================ -->
+
+  <h1 class="sheet-title">Money at a Glance</h1>
+  <p class="sheet-subtitle">One page for the month: money in, money out, and what is due when.</p>
+  <p class="sheet-tagline">A paper helper only — this sheet is not financial advice and your bank never sees it.</p>
+
+  <div class="summary-row">
+    <div class="summary-card">
+      <h3>Money coming in</h3>
+      <div class="amount"></div>
+      <p class="card-help">Paychecks, side sales, anything.</p>
+    </div>
+    <div class="summary-card">
+      <h3>Bills this month</h3>
+      <div class="amount"></div>
+      <p class="card-help">Add up the list below first.</p>
+    </div>
+    <div class="summary-card">
+      <h3>Left over</h3>
+      <div class="amount"></div>
+      <p class="card-help">In minus out. Even $5 counts.</p>
+    </div>
+  </div>
+
+  <table class="money-table">
+    <thead>
+      <tr>
+        <th>Bill or expense</th>
+        <th>Due day</th>
+        <th>Amount</th>
+        <th>Paid</th>
+      </tr>
+    </thead>
+    <tbody>
+<tr><td class="bill"></td><td class="due"></td><td class="amt"></td><td class="paid"></td></tr>
+<tr><td class="bill"></td><td class="due"></td><td class="amt"></td><td class="paid"></td></tr>
+<tr><td class="bill"></td><td class="due"></td><td class="amt"></td><td class="paid"></td></tr>
+<tr><td class="bill"></td><td class="due"></td><td class="amt"></td><td class="paid"></td></tr>
+<tr><td class="bill"></td><td class="due"></td><td class="amt"></td><td class="paid"></td></tr>
+<tr><td class="bill"></td><td class="due"></td><td class="amt"></td><td class="paid"></td></tr>
+<tr><td class="bill"></td><td class="due"></td><td class="amt"></td><td class="paid"></td></tr>
+<tr><td class="bill"></td><td class="due"></td><td class="amt"></td><td class="paid"></td></tr>
+<tr><td class="bill"></td><td class="due"></td><td class="amt"></td><td class="paid"></td></tr>
+<tr><td class="bill"></td><td class="due"></td><td class="amt"></td><td class="paid"></td></tr>
+<tr><td class="bill"></td><td class="due"></td><td class="amt"></td><td class="paid"></td></tr>
+<tr><td class="bill"></td><td class="due"></td><td class="amt"></td><td class="paid"></td></tr>
+<tr><td class="bill"></td><td class="due"></td><td class="amt"></td><td class="paid"></td></tr>
+<tr><td class="bill"></td><td class="due"></td><td class="amt"></td><td class="paid"></td></tr>
+</tbody>
+  </table>
+
+  <h2 class="notes-heading">Notes &amp; small wins</h2>
+  <div class="notes-slate">
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+  </div>
+
+  <p class="print-hint">Print at 100% scale on Letter paper. Free to print and reuse monthly. No sign-ups, no email, no tracking — it is just a sheet of paper.</p>
+
+</body>
+</html>

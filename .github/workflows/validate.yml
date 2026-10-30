@@ -1,0 +1,46 @@
+name: validate
+
+# Validates every sheet in the pack builds into a print-ready PDF.
+# Runs on every push and PR to main. Fully offline: no downloads
+# beyond pip packages, no network calls from the build itself.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-sheets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out pack
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install build + test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install weasyprint pypdf
+
+      - name: Check-mode build of every sheet
+        run: python scripts/build.py --check
+
+      - name: Build PDFs and run offline test suite
+        run: python tests/test_build.py
+
+      - name: Upload built PDFs (always, for inspection)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: built-pdfs
+          path: output/*.pdf
+          if-no-files-found: warn

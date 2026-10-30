@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>How to Use This Pack — Usage Guide Pattern</title>
+<meta name="description" content="Friendly one-page usage guide pattern for free printable packs. Copy it and swap the content.">
+<style>
+  /* Screen-only guide: bright, warm, and plain-spoken.
+     This page is a PATTERN — copy it into pack repos and edit the copy. */
+  :root {
+    --ink: #1a202c;
+    --paper: #fffdf9;
+    --accent: #2b6cb0;
+    --soft: #edf2f7;
+    --line: #cbd5e0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3.5rem; }
+  header { border-bottom: 3px solid var(--accent); padding-bottom: 0.75rem; margin-bottom: 1.5rem; }
+  .recheck { font-size: 0.82rem; color: #4a5568; margin: 0 0 0.4rem 0; }
+  .recheck strong { letter-spacing: 0.02em; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0.2rem 0 0.3rem; }
+  .sub { color: #4a5568; font-size: 1.05rem; margin: 0; font-style: italic; }
+  h2 { font-size: 1.25rem; margin: 2rem 0 0.5rem; }
+  ol, ul { padding-left: 1.4rem; }
+  li { margin-bottom: 0.5rem; }
+  .card {
+    background: var(--soft);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 1rem 1.1rem;
+    margin: 1.25rem 0;
+  }
+  .card h2 { margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+  th, td { border: 1px solid var(--line); padding: 0.5rem 0.6rem; text-align: left; }
+  th { background: var(--soft); }
+  footer {
+    margin-top: 3rem; padding-top: 0.9rem; border-top: 1px solid var(--line);
+    font-size: 0.85rem; color: #4a5568;
+  }
+  a { color: var(--accent); }
+  .fine { font-size: 0.85rem; color: #4a5568; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <!-- Recheck-date block: same pattern every pack page uses. -->
+    <p class="recheck">
+      <strong>Last updated:</strong> <span id="recheck-date">REPLACE-WITH-DATE</span>
+      &nbsp;·&nbsp; <strong>Version:</strong> REPLACE-WITH-VERSION
+      &nbsp;·&nbsp; <strong>Recheck URL:</strong> <code>packs/README.md</code>
+    </p>
+    <h1>How to Use This Pack</h1>
+    <p class="sub">A plain-English guide, written like a friend would explain it.</p>
+  </header>
+
+  <p>Everything in this pack is free: free to download, free to print, free to
+  share with anyone who needs it. There is nothing to sign up for, no email to
+  give, and no account anywhere. You just print it and use it.</p>
+
+  <h2>You will need</h2>
+  <ul>
+    <li>A printer (or a library, a school, or a friend's printer — anyone's works)</li>
+    <li>Plain letter-size paper, any thickness</li>
+    <li>Any pen or pencil you like</li>
+  </ul>
+
+  <h2>How to print it (about 3 minutes)</h2>
+  <ol>
+    <li>Download a PDF from the <code>output/</code> folder — pick whichever sheet fits your week.</li>
+    <li>Open the file and click print.</li>
+    <li>Set the printer scale to <strong>100%</strong> ("Actual size"). Ignore anything that says "fit to page" — this design already fits.</li>
+    <li>Print one copy. If you like how it looks, print more. If a box feels too small for your handwriting, that sentiment is correct and the design accepts your feedback.</li>
+  </ol>
+
+  <div class="card">
+    <h2>The idea behind "recheck after" dates</h2>
+    <p>Each sheet shows two dates in the header: when it was last rebuilt, and
+    a date after which it should be re-checked against an updated version.
+    Nothing here turns into a pumpkin — the sheet still works forever — it is
+    just our way of being honest about when to grab a fresh copy.</p>
+  </div>
+
+  <h2>What each sheet is for</h2>
+  <table>
+    <thead>
+      <tr><th>Sheet</th><th>Use it when</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Weekly Reset</td><td>Your head is loud and you need everything out of it once a week.</td></tr>
+      <tr><td>Money at a Glance</td><td>Bills month happens every month and you would rather see it on one page.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Common questions</h2>
+  <ul>
+    <li><strong>Can I sell prints of this?</strong> The pages themselves are MIT licensed, so yes — see the LICENSE file in the repo.</li>
+    <li><strong>Do you get my email?</strong> No. There is no email collection anywhere near this project.</li>
+    <li><strong>Does it work in black-and-white?</strong> Yes — every sheet is tested with color off.</li>
+    <li><strong>Is this advice?</strong> No. These are paper helpers for personal use, not professional advice of any kind.</li>
+  </ul>
+
+  <footer>
+    <p class="fine">Free printable pack pattern from the free-*-pack starter
+    template. Open book, no paywalls: the HTML, CSS, build script, and this
+    guide are all in the open and MIT licensed. Built with care by the
+    pack's maintainers — see README.md for full credits.</p>
+  </footer>
+
+</div>
+</body>
+</html>

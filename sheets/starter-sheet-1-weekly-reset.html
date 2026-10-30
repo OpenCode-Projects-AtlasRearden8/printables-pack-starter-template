@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Weekly Reset — Free Printable Pack Starter Template</title>
+<link rel="stylesheet" href="../assets/print.css">
+<style>
+  /* Sheet-specific layout */
+  .tri-bucket { display: flex; gap: 0.35rem; margin-bottom: 0.5rem; }
+  .bucket {
+    flex: 1;
+    border: 1.5px solid #cbd5e0;
+    border-radius: 4px;
+    padding: 0.4rem 0.45rem;
+  }
+  .bucket h3 {
+    font-size: 10.5pt;
+    margin: 0 0 0.25rem 0;
+    color: #1a202c;
+  }
+  .bucket .bucket-help {
+    font-size: 8.5pt;
+    color: #4a5568;
+    margin: 0 0 0.35rem 0;
+  }
+  .bucket .write-slate { height: 2.75in; }
+  .reset-grid { width: 100%; border-collapse: collapse; }
+  .reset-grid th, .reset-grid td {
+    border: 1px solid #cbd5e0;
+    padding: 0.3rem 0.35rem;
+    font-size: 9pt;
+    text-align: left;
+  }
+  .week-of-line {
+    font-size: 10pt;
+    margin: 0.55rem 0 0.25rem 0;
+    color: #1a202c;
+  }
+  .week-of-line .write-inline {
+    display: inline-block;
+    border-bottom: 1px solid #a0aec0;
+    min-width: 2.2in;
+  }
+  .reset-grid th {
+    background: #edf2f7;
+    color: #1a202c;
+    font-size: 8.5pt;
+  }
+  .reset-grid td.box { width: 1.1in; }
+</style>
+</head>
+<body>
+
+  <!-- ===== Recheck-date header block (required on every sheet) ===== -->
+  <header class="recheck-block">
+    <div class="recheck-item">
+      <span class="recheck-label">Last rebuilt:</span>
+      <span class="recheck-value">{{BUILD_DATE}}</span>
+    </div>
+    <div class="recheck-item">
+      <span class="recheck-label">Recheck after:</span>
+      <span class="recheck-value">{{RECHECK_DATE}}</span>
+    </div>
+    <div class="recheck-item">
+      <span class="recheck-label">Version:</span>
+      <span class="recheck-value">{{VERSION}}</span>
+    </div>
+  </header>
+  <!-- ================================================================ -->
+
+  <h1 class="sheet-title">Weekly Reset</h1>
+  <p class="sheet-subtitle">One page, once a week. Brain-dump first, then pick a handful.</p>
+  <p class="sheet-tagline">Low-energy friendly: any bucket can be empty. Two things done is a reset.</p>
+
+  <div class="tri-bucket">
+    <div class="bucket">
+      <h3>Everything on my mind</h3>
+      <p class="bucket-help">No sorting. No judging. Just get it out.</p>
+      <div class="write-slate"></div>
+    </div>
+    <div class="bucket">
+      <h3>Must happen this week</h3>
+      <p class="bucket-help">Only if it has a real deadline or dinner depends on it.</p>
+      <div class="write-slate"></div>
+    </div>
+    <div class="bucket">
+      <h3>Nice if I get to it</h3>
+      <p class="bucket-help">Cap it short. This is the bonus round.</p>
+      <div class="write-slate"></div>
+    </div>
+  </div>
+
+  <p class="week-of-line">Week of: <span class="write-inline"></span></p>
+
+  <table class="reset-grid">
+    <thead>
+      <tr>
+        <th>Pick 3 for the week</th>
+        <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1.</td><td class="box"></td><td class="box"></td><td class="box"></td><td class="box"></td><td class="box"></td><td class="box"></td><td class="box"></td></tr>
+      <tr><td>2.</td><td class="box"></td><td class="box"></td><td class="box"></td><td class="box"></td><td class="box"></td><td class="box"></td><td class="box"></td></tr>
+      <tr><td>3.</td><td class="box"></td><td class="box"></td><td class="box"></td><td class="box"></td><td class="box"></td><td class="box"></td><td class="box"></td></tr>
+    </tbody>
+  </table>
+
+  <p class="print-hint">Print at 100% scale on Letter paper. This sheet is free to use, share, and print for personal use. No requests, sign-ups, or accounts attached.</p>
+
+</body>
+</html>

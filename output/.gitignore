@@ -1,0 +1,4 @@
+# Force git to keep the output folder itself (files inside are generated).
+*
+!.gitignore
+!README.md
